@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<style>
+        
+body{
+    background-image: linear-gradient(to right, #cad2c5, #84a98c, #cad2c5) ;
+}
+.nav-bar{
+    display: flex;
+    background-color: rgb(49, 95, 93);
+    margin: auto;
+}
+.firstLi{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+.firstLi .li1{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.firstLi .li1 .link{
+    cursor:pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    cursor:pointer;
+    color:black;
+    font-weight: bold;
+}
+.link:visited{
+    color: black;
+}
+.form-section{
+    border-radius: 1rem;
+    background: #1a4e26;
+    width: 30%;
+    padding: 1rem 1rem;
+    margin-left: 36%;
+}
+.header{
+    text-align:  center;
+    margin: auto;
+}
+@media only screen and (max-width: 600px){
+    .header{
+        text-align:center;
+        margin: auto;
+    }
+}
+.form-group{
+    margin: 10px;
+    padding: 1rem;
+}
+.form-control{
+    display: block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 70%;
+    height: 2rem;
+    
+}
+@media only screen and (max-width: 600px){
+    .form-section{
+        position: relative;
+        margin: auto;
+        width: 60%;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .button-part{
+        width:100%;
+        margin: auto;
+    }
+}
+#dropdown{
+    width: 30%;
+}
+label{
+    font-size: 20px;
+    font-family: 'Bellota';
+}
+.header{
+    font-family: 'Aclonica';
+    text-shadow: 2px 2px 4px grey;
+}
+h2{
+    margin-left: 20px;
+}
+#button{
+    margin: 20px;
+    margin-left: 20%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #84a98c;
+    width: 50%;
+    font-size: 15px;
+    padding: 20px;
+}
+.last-para{
+    margin-left: 20%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+                
+            <ul class="firstLi">
+                <li class="li1"><a href="index.html" class="link">HOME</a></li>
+                <li class="li1"><a href="contact.html" class="link">CONTACT PAGE</a></li>
+                <li class="li1"><a href="registration.html" class="link">REGISTRATION PAGE</a></li>
+                <li class="li1"><a href="login.html" class="link">LOGIN PAGE</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="header">
+            <h2>REGISTRATION PAGE</h2>
+            <p>Gently follow the instructions to register</p>
+        </div>
+        <form class="form-section">
+            
+            <div class="form-group">
+                <label for="firstname">
+                    First Name
+                </label>
+                <input type="name" id="firstname"  class="form-control" required>
+
+            </div>
+            <div class="form-group">
+                <label for="lastname">
+                    Last Name(Surname)
+                </label>
+                <input id="lastname" class="form-control" type="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input type="text" id="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Gender">
+                    Gender
+                </label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Gender</option>
+                    <option value="gender">Male</option>
+                    <option value="gender">Female</option>
+                    <option value="gender">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country">
+                    Country
+                </label>
+                <input id="country" class="form-control" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="state">
+                    State/Province
+                </label>
+                <input id="state" class="form-control" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" class="form-control" type="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+                <input id="confirm-password" type="password" class="form-control" required>
+            </div>
+            <div class="button-part">
+                <button id="button">Register</button>
+            </div>
+            <div class="bottom">
+                <p class="last-para"><u>Already have an account?</u> <a href="login.html" class="link3">Login Here.</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

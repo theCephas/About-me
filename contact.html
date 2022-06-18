@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-bar{
+    display: flex;
+    background-color: #cad2c5;
+    margin: auto;
+}
+.firstLi{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+.firstLi .li1{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.firstLi .li1 .link{
+    cursor:pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    cursor:pointer;
+    color:black;
+    font-weight: bold;
+}
+.link:visited{
+    color: black;
+}
+        body{
+            background: #ebebeb;
+            padding: 20px;
+        }
+        h1{
+            font-weight: 300px;
+            text-shadow: 1px 1px 1px #fffffb;
+            line-height: 2px;
+            font-family: cursive;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        form{
+            background: #cad2c5;
+            padding: 2.5rem 0.625rem;
+            border-radius: 1rem;
+            box-shadow: 0px 15px 30px #84a98c;
+            width: 30%;
+            margin-left: 36%;
+        }
+        @media only screen and (max-width: 600px){
+            form{
+                width: 50%;
+                margin: auto;
+            }
+        }
+        #form{
+            margin: 0 auto 1.25rem auto;
+            padding: 0.25rem;
+        }
+        input{
+            display: block;
+            width: auto;
+            height: 1rem;
+            padding:1rem 1rem;
+            border-radius: 15px;
+            border: 1px solid #e5e5e5;
+        }
+        textarea{
+            display: block;
+            width: 50%;
+            height: 50%;
+            padding:1rem 1rem;
+            border-radius: 20px;
+            border: 1px solid #e5e5e5;
+        }
+        label{
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+                
+            <ul class="firstLi">
+                <li class="li1"><a href="index.html" class="link">HOME</a></li>
+                <li class="li1"><a href="contact.html" class="link">CONTACT PAGE</a></li>
+                <li class="li1"><a href="registration.html" class="link">REGISTRATION PAGE</a></li>
+                <li class="li1"><a href="login.html" class="link">LOGIN PAGE</a></li>
+            </ul>
+            
+        </nav>
+        <h1 class="title">CONTACT ME!</h1>
+        <p>You can fill up the form, no stress!</p>
+    </header>
+    <form id="contactForm">
+        <div id="form">
+            <label for="name" id="name-label">Name</label>
+            <input id="name"
+             placeholder="Enter your full name"
+             type="text">
+        </div>
+        <div id="form">
+             <label for="email">
+                Email
+             </label>
+             <input id="email"
+             placeholder="Enter a valid Email address"
+             type="email"
+             required>
+        </div>
+        <div id="form">
+             <label for="textarea">Message</label>
+             <textarea placeholder="Enter your message here..."
+             class="message-box"></textarea> 
+        </div>           
+        
+    </form>
+</body>
+</html>
